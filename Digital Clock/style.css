@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100hv;
+    justify-content: center;
+    background: url("https://media.istockphoto.com/id/1454695563/photo/a-beautiful-idyllic-image-of-the-nature-of-the-countryside-on-a-summer-evening.webp?b=1&s=170667a&w=0&k=20&c=28zKOzLjNIKj8VU067zK247udnJXpYA4LFYhfk8s_l8=");
+    background-size: cover;
+    overflow: hidden;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color:black;
+}
+
+.clock{
+    display: flex;
+}
+
+.clock div{
+    margin: 5px;
+    position: relative;
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    color: wheat;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+
+}
+
+.clock #text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: blue;
+    opacity: 0.8;
+
+}
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background-color:green;
+    color: black;
+}

@@ -69,7 +69,7 @@ itemPrice=(value)=>{
 
         answer[i]=discount(value[i]);
         totalBil+=answer[i];
-        document.
+        
     }
 
     return totalBil;
