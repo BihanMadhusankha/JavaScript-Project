@@ -1,0 +1,17 @@
+.lbl-header{
+    color:#1863eb;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#agree{
+    color: rgb(234, 43, 43);
+}
+
+span{
+    color: red;
+}
+.erro-massage{
+    color: red;
+    font-size: small;
+}

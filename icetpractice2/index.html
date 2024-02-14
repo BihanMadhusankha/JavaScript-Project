@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../icetpractice2/css/global.css">
+</head>
+
+<body>
+
+    <p class="lbl-header">Student Information</p>
+    <hr>
+
+    <table>
+        <tr>
+            <td><label for="student name">Student Name<span>*</span>:</label></td>
+            <td><input type="text" id="studentname"></td>
+            <td><p id="txt-error-name" class="erro-massage"></p></td>
+        </tr>
+
+        <tr>
+            <td><label for="student age">Student Age<span>*</span>:</label></td>
+            <td><input type="number" id="studentage"></td>
+            <td><p id="txt-error-age" class="erro-massage"></p></td>
+        </tr>
+
+        <tr>
+            <td><label for=" student contact number">Student Contact<span>*</span>:</label></td>
+            <td><input type="text" id="studentcontactnumber"></td>
+            <td><p id="txt-error-contact" class="erro-massage"></p></td>
+        </tr>
+
+        <tr>
+            <td><label for="gender">Gender<span>*</span>:</label></label></td>
+            <td><label for="male">Female</label><input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label> <input type="radio" name="gender" id="female" value="female">
+            </td>
+            <td><p id="txt-error-gender"></p></td>
+        </tr>
+    </table>
+
+    <p class="lbl-header">Gardian Information</p>
+    <hr>
+    <table>
+        <tr>
+            <td><label for="name">Name<span>*</span>:</label></td>
+            <td><input type="text" id="name"></td>
+            <td><p id="txt-error-gName"></p></td>
+        </tr>
+
+        <tr>
+            <td><label for="contact number">Contact Number<span>*</span>:</label></td>
+            <td><input type="text" id="contactnumber"></td>
+            <td><p id="txt-error-gContact"></p></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td><input type="checkbox" name="info" id="info"></td>
+            <td>
+                <p id="agree">I agree to the terms and conditions</p>
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><button type="submit" id="submit">Register</button>
+                <button type="reset" id="reset">Clear</button>
+            </td>
+          
+        </tr>
+    </table>
+
+    <script src="../icetpractice2/js/app.js"></script>
+    <script src="../icetpractice2/js/arrays.js"></script>
+
+</body>
+
+</html>
