@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #121212;
+}
+
+span{
+    background: url("https://cdn4.iconfinder.com/data/icons/essentials-72/24/028_-_Heart-512.png") ;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none !important;
+    background-size: cover !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate 6s linear infinite;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #3079ed; font-weight:bold; font-size:3em;
+		
+		animation-name: focus-in-contract;
+		animation-duration: 10s;
+		animation-timing-function:cubic-bezier(0.95, 0.05, 0.795, 0.035);
+		animation-delay: 5ms;
+		animation-iteration-count: 1;
+		animation-direction: alternate;
+		animation-fill-mode: backwards;
+        animation: focus-in-contract 1.2s ease-out 0s 1 alternate backwards;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+
+    }
+
+    100%{
+        transform: translate(-50%,-1000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+
+    }
+}
+
+@keyframes focus-in-contract {
+			
+    0% {
+        letter-spacing:1em;
+        filter:hue-rotate(0);
+        opacity:0;
+        transform:scale(0.9);
+        transform-origin:center;
+        transform-style:preserve-3d;
+        box-shadow:0 0 0 0 rgba(255,255,255,0);
+
+    }
+    100% {
+        filter:hue-rotate(360deg);
+        opacity:1;
+        transform:scale(1);
+        transform-origin:center;
+        transform-style:preserve-3d;
+        box-shadow:0 0 0 10px rgba(255,255,255,0);
+        letter-spacing:1em;
+        
+    }
+}
