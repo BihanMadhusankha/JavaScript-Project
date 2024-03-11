@@ -2,9 +2,9 @@
 document.getElementById("searchBtn").addEventListener("click",() =>{
    let searchVal = document.getElementById("searchTxt").value;
     let reop ={
-        method:'GET'
+        method:'POST'
     };
-    fetch(`http://api.weatherapi.com/v1/current.json?key=17d3cba921e64d1d97a41337241701&q=${searchVal}`,reop)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=f1850d9ec02649c4b0a84749240403&q=${searchVal}`,reop)
     .then(response => response.json())
     .then(data =>{
         
